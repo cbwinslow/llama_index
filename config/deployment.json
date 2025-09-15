@@ -1,0 +1,10 @@
+{
+  "environment": "development",
+  "debug": false,
+  "log_level": "INFO",
+  "host": "localhost",
+  "port": 8000,
+  "worker_processes": 1,
+  "max_workers": 4,
+  "timeout": 30
+}
