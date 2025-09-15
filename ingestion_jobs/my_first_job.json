@@ -1,0 +1,13 @@
+{
+  "job_name": "my_first_job",
+  "created_at": "2025-09-13T13:35:31.940601",
+  "priority": "normal",
+  "sources": {
+    "local_directories": [
+      "./data/sample_docs"
+    ]
+  },
+  "status": "completed",
+  "started_at": "2025-09-13T13:36:16.036259",
+  "completed_at": "2025-09-13T13:36:18.036643"
+}

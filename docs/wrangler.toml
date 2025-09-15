@@ -1,0 +1,22 @@
+name = "llamaindex-docs"
+main = "dist/index.js"
+compatibility_date = "2024-01-01"
+
+[site]
+bucket = "./site"
+
+[build]
+command = "poetry run prepare-for-build && poetry run mkdocs build"
+watch_dir = "./docs"
+
+[vars]
+BASE_URL = "https://docs.llamaindex.ai"
+
+# Functions configuration
+[placement]
+mode = "smart"
+
+[[rules]]
+type = "ESModule"
+globs = ["functions/**/*"]
+fallthrough = true

@@ -1,0 +1,35 @@
+{
+    "sources": {
+        "local_directories": [
+            "./data/sample_docs"
+        ],
+        "websites": [
+            "https://www.congress.gov/",
+            "https://www.whitehouse.gov/briefing-room/"
+        ],
+        "rss_feeds": [
+            "https://feeds.reuters.com/Reuters/PoliticsNews",
+            "https://rss.cnn.com/rss/cnn_allpolitics.rss"
+        ],
+        "sitemaps": [
+            "https://www.congress.gov/sitemap.xml"
+        ]
+    },
+    "ingestion_settings": {
+        "max_crawl_depth": 3,
+        "max_crawl_pages": 100,
+        "respect_robots_txt": true,
+        "delay_between_requests": 1.0
+    },
+    "extraction_settings": {
+        "extract_entities": true,
+        "extract_relationships": true,
+        "extract_sentiment": true
+    },
+    "output_settings": {
+        "save_documents": true,
+        "save_metadata": true,
+        "generate_report": true,
+        "output_directory": "./output"
+    }
+}
