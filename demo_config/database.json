@@ -1,0 +1,19 @@
+{
+  "sql_database": {
+    "type": "postgresql",
+    "database": "app.db",
+    "host": "production-db.example.com",
+    "port": 5432,
+    "username": "",
+    "password": ""
+  },
+  "neo4j_database": {
+    "uri": "bolt://localhost:7687",
+    "username": "neo4j",
+    "password": ""
+  },
+  "vector_store": {
+    "type": "chroma",
+    "persist_directory": "./chroma_db"
+  }
+}
